@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <script src="site.js" defer></script>
+</head>
+<html>
+<body>
+
+<div>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="apparel.html">Apparel &#9662;</a> <!-- link that creates dropdown menu -->
+          <ul class="dropdown">    <!-- dropdown menu list -->
+              <li><a href="hats.html">Hats</a></li>
+              <li><a href="hoodies.html">Hoodies</a></li>
+              <li><a href="tshirts.html">T-Shirts</a></li>
+          </ul>
+      </li>
+        <li>
+            <a href="memorabilia.html">Memorabilia &#9662;</a> <!-- link that creates dropdown menu -->
+            <ul class="dropdown">    <!-- dropdown menu list -->
+                <li><a href="banners.html">Banners</a></li>
+                <li><a href="pins.html">Pins</a></li>
+                <li><a href="stickers.html">Stickers</a></li>
+            </ul>
+        </li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+</div>
+
+<!-- The Modal -->
+<div id="itemPopup" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<table cellspacing="20px" cellpadding="10px">
+  
+  <tr>
+      <td class="cellOne"><img id="itemImage" class="imageOne">
+      </td>
+      <td>
+        <h3>ID:</h3>
+        <h3>Item:</h3>
+        <h3>Price:</h3>
+      </td>
+      <td>
+        <h3><label id="itemID"> </label></h3>
+        <h3><label id="itemName"></label></h3>
+        <h3><label id="itemPrice"></label></h3>
+      </td>
+  </tr>
+     
+    <tr>
+      <td>
+        <button style="background-image: linear-gradient(blue, skyblue); color: white; border-radius: 15px; font-size: 32px;" type="button" onclick="ShowAdd()">
+          Add to Cart
+     </button>
+
+     <p style="font-size: 32px; text-align: right;">
+     <a href="index.html" style="color: white;">Back to Main Page</a>
+   </p>
+      </td>
+    </tr>
+    
+</table>
+
+  </div>
+
+</div>
+
+<table style="padding-top: 200px; padding-bottom: 50px; width: 100%;">
+    <tr>
+      <td style="text-align: center;">
+        <img style="border-radius: 25px;" onclick="ShowPopup('hoodie3')" src="Project/Images/hoodie3.jpg" alt="">
+        <h3 style="color: blue;">Betsy Ross Hoodie $29.95</h3>
+      </td>
+      <td style="text-align: center;">
+        <img style="border-radius: 25px;" onclick="ShowPopup('hoodies')" src="Project/Images/hoodies.jpg" alt="">
+        <h3 style="color: blue;">Red Flag Hoodie $27.95</h3>
+      </td>
+      <td style="text-align: center;">
+        <img style="border-radius: 25px;" onclick="ShowPopup('hoodie2')" src="Project/Images/hoodie2.jpg" alt="">
+        <h3 style="color: blue;">1776 Hoodie $29.95</h3>
+      </td>
+    </tr>
+  </table>
+
+  <div>
+    <table>
+    <tr>
+      <td>
+        <label id="cartList" class="container"></label>
+      </td>
+    </tr>
+    </table>
+    </div>
+    
+  <div style="text-align: center;">
+    <button onclick="goBack()" style="color: blue;">Back</button>
+  
+  <script style="text-align: center;">
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+    </div>
+  <div class="botnav">
+    <h3 style="text-align: center; color: white;">Rightside Swag</h3>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

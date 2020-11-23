@@ -1,0 +1,174 @@
+  .main-content{
+    background-color: white;
+  }
+  
+  .botnav {
+    background-image: repeating-radial-gradient(blue,white, blue);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .botnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .botnav a:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  ul{
+    padding: 0;
+    list-style: none;
+    background: blue;
+    position: fixed;
+    width: 100%;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: #fff;
+    background: red;
+}
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background:blue;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;}
+
+.imgRow{
+  border-radius: 15px;
+}
+
+.txtRow{
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+  background-image: repeating-radial-gradient(blue, blue, blue);
+  border-radius: 12px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* This hides the pop up by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box - moves the contents down 100 pixels to replicate a popup*/
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 1000%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
+ }
+ /* Modal Content (Image) */
+ .modal-content {
+  color: blue;
+  margin: auto;
+  display: block;
+  width: 80%;
+  animation-name: zoom; /*Adds some animation to the popup*/
+  animation-duration: 0.6s; /*duration of the animation*/
+ }
+ .modal-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+ @keyframes zoom { /* The definition of the animation, in this case a zoom effect */
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+ }
+ /* The Close Button – closes the popup when clicked */
+ .close {
+  text-align: right;
+  margin-top: 0px;
+  padding-right: 10px;
+  color: blue;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  height: 40px;
+  }
+  .close:hover,
+  .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .container{
+    color: blue;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    float: right;
+    z-index: 1;
+    top: 150px;
+    right: 0;
+    background-color: rgb(63, 77, 202);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #a1b6fc;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  
+  
+
+  
+
+ 

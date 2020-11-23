@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<html>
+<body>
+<div>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="apparel.html">Apparel &#9662;</a> <!-- link that creates dropdown menu -->
+          <ul class="dropdown">    <!-- dropdown menu list -->
+              <li><a href="hats.html">Hats</a></li>
+              <li><a href="hoodies.html">Hoodies</a></li>
+              <li><a href="tshirts.html">T-Shirts</a></li>
+          </ul>
+      </li>
+        <li>
+            <a href="memorabilia.html">Memorabilia &#9662;</a> <!-- link that creates dropdown menu -->
+            <ul class="dropdown">    <!-- dropdown menu list -->
+                <li><a href="banners.html">Banners</a></li>
+                <li><a href="pins.html">Pins</a></li>
+                <li><a href="stickers.html">Stickers</a></li>
+            </ul>
+        </li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <form id="login-form"> 
+        <input id="userName" type="text" placeholder="Enter Username" value=""/>
+        <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+        <input id="login_btn" type="submit" value="Login" onClick="check()"/> 
+   </form>
+
+   <div class="botnav">
+    <h3 style="text-align: center; color: white;">Rightside Swag</h3>
+  </div>
+
+
+
+</body>
+</html>
